@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoluntHere.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout>
+        <Frame BackgroundColor="DarkSlateBlue" Padding="24"  CornerRadius="0">
+            <Label Text="VoluntHere" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="White" FontSize="36"/>
+        </Frame>
+            <Button x:Name="Help" FontSize="Large" Margin="0,50,0,0" Padding="100" Text="I need help" Clicked="getHelp">
+        </Button>
+
+            <Button x:Name="Login"  Text="Volunteer Sign-up/Login" Margin="0,280,0,0">
+            
+        </Button>
+           
+        <!--Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>-->
+        
+    </StackLayout>
+    </Grid>
+
+</ContentPage>
