@@ -26,7 +26,7 @@ namespace VoluntHere
 
             if (sender is null)
             {
-                throw new ArgumentNullException(nameof(send0er));
+                throw new ArgumentNullException(nameof(sender));
             }
 
             DisplayAlert("Done!", "Help is on the way!", "OK");
