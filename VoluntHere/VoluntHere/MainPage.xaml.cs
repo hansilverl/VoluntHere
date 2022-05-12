@@ -5,8 +5,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
 
+using Xamarin.Forms;
 
 namespace VoluntHere
 {
@@ -20,12 +23,13 @@ namespace VoluntHere
         private void getHelp(object sender, EventArgs e)
         {
 
+
             if (sender is null)
             {
-                throw new ArgumentNullException(nameof(sender));
+                throw new ArgumentNullException(nameof(send0er));
             }
-            Page Page1 = new Page();
-            App.Current.MainPage = new Page1();
+
+            DisplayAlert("Done!", "Help is on the way!", "OK");
 
 
         }

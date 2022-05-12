@@ -4,9 +4,12 @@
              x:Class="VoluntHere.Page1">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+           <!-- <Label Text=""
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" />-->
+            <Label Text="Help is on the way!" FontSize="Header" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
