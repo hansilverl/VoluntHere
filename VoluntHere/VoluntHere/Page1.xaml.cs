@@ -21,18 +21,6 @@ namespace VoluntHere
             InitializeComponent();
         }
 
-        private void Back(object sender, EventArgs e)
-        {
-
-            if (sender is null)
-            {
-                throw new ArgumentNullException(nameof(sender));
-            }
-            App.Current.MainPage = MainPage.;
-
-
-        }
-
         CancellationTokenSource cts;
 
         async Task GetCurrentLocation()
@@ -65,6 +53,12 @@ namespace VoluntHere
                 // Unable to get location
             }
         }
+
+       /* protected override bool OnBackButtonPressed()
+        {
+            //return true to prevent back, return false to just do something before going back. 
+            
+        }*/
 
         protected override void OnDisappearing()
         {
