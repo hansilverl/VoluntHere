@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ApplicationManifest>REGISTER.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -12,10 +13,18 @@
 
   <ItemGroup>
     <Compile Remove="Page1.xaml.cs" />
+    <Compile Remove="Page2.xaml.cs" />
+    <Compile Remove="REGISTER.xaml.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Page1.xaml" />
+    <EmbeddedResource Remove="Page2.xaml" />
+    <EmbeddedResource Remove="REGISTER.xaml.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="REGISTER.manifest" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,5 +36,11 @@
     <Reference Include="Mono.Android">
       <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v12.0\Mono.Android.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="REGISTER.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoluntHere.REGISTER">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BO TIREE MAH FISHFASHT"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="entry1" Placeholder="Name"></Entry>
+            <Entry x:Name="entry2" Placeholder="Longitude"></Entry>
+            <Entry x:Name="entry3" Placeholder="Latitude"></Entry>
+            <Button Text="Submit" Clicked="Button_Click_Submit">
+            </Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

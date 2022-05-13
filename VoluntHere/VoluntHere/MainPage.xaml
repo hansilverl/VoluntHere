@@ -17,7 +17,7 @@
             <Button x:Name="Help" FontSize="Large" Margin="0,50,0,0" Padding="100" Text="I need help" Clicked="getHelp">
         </Button>
 
-            <Button x:Name="Login"  Text="Volunteer Sign-up/Login" Margin="0,200,0,0">
+            <Button x:Name="Login"  Text="Volunteer Sign-up/Login" Margin="0,200,0,0" Clicked="Button_Click_Register">
             
         </Button>
            
